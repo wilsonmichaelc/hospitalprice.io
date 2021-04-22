@@ -1,0 +1,20 @@
+<div class="container results">
+    <div class="row">
+        <div class="col-12 result-list">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col" sortable="price">Price</th>
+                        <th scope="col" sortable="description">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let result of results">
+                        <td class="price">{{ result.price | currency }}</td>
+                        <td>{{ result.short_description}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

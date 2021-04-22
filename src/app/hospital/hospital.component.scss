@@ -1,5 +1,5 @@
-// TODO: clean up thes messy css that spans every component
 $color-bg: #39404a;
+$color-primary: #e35865;
 $color-main: #bbb;
 $color-search: #bbb;
 $letter-spacing: 2px;
@@ -11,8 +11,14 @@ $letter-spacing: 2px;
     background-color: $color-bg;
 }
 
-.search-spinner {
-    padding-top: 40px;
+.hospital {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10vh;
+    & div {
+        width: 600px;
+    }
 }
 
 h1 {
@@ -28,7 +34,7 @@ input {
     color: $color-search;
     background: none;
     letter-spacing: 1px;
-    word-spacing: 10px;
+    caret-color: $color-primary;
     font-family: "Arvo", sans-serif;
     padding: 0;
     line-height: 25px;
@@ -48,18 +54,6 @@ button {
     border: 3px solid $color-main;
 }
 
-.bi,
-.bi-search {
-    color: $color-main;
-    font-size: 20px;
-    line-height: 25px;
-    cursor: pointer;
-    font-size: 20px;
-}
-
-.bi-search:hover {
-    color: $color-search;
-}
 
 ::-webkit-input-placeholder {
     color: $color-search;
@@ -83,9 +77,3 @@ button {
     opacity: 1;
 }
 
-.footer {
-    color: $color-main;
-    height: 140px;
-    margin-top: -140px;
-    z-index: -1;
-  }

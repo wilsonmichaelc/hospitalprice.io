@@ -1,0 +1,12 @@
+<div class="container text-center search">
+    <div class="row">
+        <div class="col">
+            <h1>Search</h1>
+            <h5>{{hospital.name}} - {{hospital.city}} <i class="bi bi-x-circle" (click)="reset()"></i></h5>
+            <div class="form col-12">
+                <input class="col-10" type="text" [(ngModel)]="searchString" placeholder="search" (keydown.enter)="search()" />
+                <span class="bi bi-search col-2 text-right" (click)="search()" title="Search"></span>
+            </div>
+        </div>
+    </div>
+</div>

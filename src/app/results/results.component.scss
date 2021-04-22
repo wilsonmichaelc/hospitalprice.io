@@ -1,0 +1,56 @@
+$color-bg: #39404a;
+$color-price: #e35865;
+$color-secondary: #e3586653;
+$color-main: #bbb;
+$color-search: #bbb;
+$letter-spacing: 2px;
+
+.container-fluid {
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    background-color: $color-bg;
+}
+
+.results {
+    display: flex;
+    align-items: flex-start;
+    width: 600px;
+    padding-top: 20px;
+    overflow-y: scroll;
+    margin-top: 20px;
+}
+
+table {
+    color: $color-main;
+    padding-left: 0px;
+}
+
+.result-list {
+    max-height: 50vh;
+}
+
+.price {
+    font-weight: bold;
+    color: $color-price;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: $color-main;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $color-secondary;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $color-price;
+}

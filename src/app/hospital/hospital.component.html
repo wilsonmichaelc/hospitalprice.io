@@ -1,0 +1,15 @@
+<div class="container text-center hospital">
+    <div class="row">
+        <div class="col">
+            <h1>Find a hospital in your city</h1>
+            <div class="form col-12">
+                <ng-template #rt let-r="result" let-t="term" style="text-transform: capitalize;">
+                    {{r.name}} - {{r.city}}
+                </ng-template>
+                <input id="typeahead-basic" class="col-11" type="text" [(ngModel)]="model" [ngbTypeahead]="search"
+                    [inputFormatter]="formatter" [resultFormatter]="formatter" [resultTemplate]="rt" [editable]='false'
+                    (selectItem)="hospitalSelected($event.item)" placeholder="start typing to search" />
+            </div>
+        </div>
+    </div>
+</div>
