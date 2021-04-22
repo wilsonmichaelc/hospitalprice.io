@@ -8,7 +8,7 @@
                 </ng-template>
                 <input id="typeahead-basic" class="col-11" type="text" [(ngModel)]="model" [ngbTypeahead]="search"
                     [inputFormatter]="formatter" [resultFormatter]="formatter" [resultTemplate]="rt" [editable]='false'
-                    (selectItem)="hospitalSelected($event.item)" placeholder="start typing to search" />
+                    (selectItem)="hospitalSelected($event.item)" placeholder="city ... start typing for results" />
             </div>
         </div>
     </div>
